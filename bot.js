@@ -450,66 +450,6 @@ client.on('interactionCreate', async interaction => {
 })
 //=====// LinkListeSistemi \\=====\\
 
-//=====// HataLog \\=====\\
-
-const log = '1061985950642753625'
-process.on("unhandledRejection", error => { 
-  
-  const Hata = new EmbedBuilder()
-    .setColor("Red")
-    .setTitle("Hata")
-    .setDescription(`<:Hata:1048294942054809630> **Bir hata oluştu**\n\`${error}\``)
-   
-  client.channels.cache.get(log).send({embeds: [Hata]}) 
- 
-  console.log(error)
-})
-process.on("uncaughtException", error => { 
-  
-  const Hata2 = new EmbedBuilder()
-    .setColor("Red")
-    .setTitle("Hata")
-    .setDescription(`<:Hata:1048294942054809630> **Bir hata oluştu**\n\`${error}\``)
-   
-  client.channels.cache.get(log).send({embeds: [Hata2]}) 
-  
-  console.log(error)
-})
-process.on("uncaughtExceptionMonitor", error => {
-  
-  const Hata3 = new EmbedBuilder()
-    .setColor("Red")
-    .setTitle("Hata")
-    .setDescription(`<:Hata:1048294942054809630> **Bir hata oluştu**\n\`${error}\``)
-   
-  client.channels.cache.get(log).send({embeds: [Hata3]}) 
-
-  console.log(error)
-})
- 
-/*monitor(`${db.fetch(`UptimeLink`)}`, {
-    retries: 1
-}).on('http-error', function(err) {
-client.channels.cache.get(log).send(`Sunucu, bir` +err.statusCode+` hatası buldu. Hatanın Açıklaması:`+err.body)
-    console.log('The server returned a '+err.statusCode+' statuscode, with the body:'+err.body);
-}).on('connection-error', function() {
-    console.log('The server could not be reached');
-client.channels.cache.get(log).send(`Sunucuya bağlanılamadı`)
-}).on('error', function(err) {
-client.channels.cache.get(log).send(`Bu hata, hem 404 gibi hatasında hem de sunucuya bağlanamama hatasında tetiklenir`)
-    console.log('This is triggered on both http-error and connection-error');
-}).on('recovery', function() {
-    console.log('The server just recovered after downtime');
-client.channels.cache.get(log).send(`Sunucu kapalı kalma süresinden sonra yeni kurtarıldı`)
-});*/
-//=====// HataLog \\=====\\
-
-//=====// PingLog \\=====\\
-const pinglendi = new EmbedBuilder()
-  .addFields({name: `<:Sistem:1065695351337660547> Linkler başarıyla pinglendi`, value: `**Pinglenen link sayısı:** \`${db.fetch("UptimeLink").length || 0}\``})
-  .setColor("Green")
-//=====// PingLog \\=====\\
-
 //=====// UptimeEtme \\=====\\
 setInterval(() => {
   var links = db.get("UptimeLink");
@@ -521,8 +461,7 @@ setInterval(() => {
       console.log("Hata: " + e);
     }
   });
-  console.log("Uptime başarılı");
-  client.channels.cache.get("1069661624878764062").send({embeds: [pinglendi]})
+  console.log("Uptime başarılı")
 }, 120000);
 //=====// UptimeEtme \\=====\\
 
