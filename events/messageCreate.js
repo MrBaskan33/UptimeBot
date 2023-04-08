@@ -17,7 +17,7 @@ module.exports = {
       
     
 const Topgg = require(`@top-gg/sdk`)
-const api = new Topgg.Api('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEwNjIwNTE5MjYxOTMyMTM2MDIiLCJib3QiOnRydWUsImlhdCI6MTY3NjkyMDg5N30.eXun27YYwifmWvuSa9_A82GX3X5OLWZaJVkr-YLnAIs')
+const api = new Topgg.Api('')
 
 const OyVermemişsin = new EmbedBuilder()
   .setColor('Red')
