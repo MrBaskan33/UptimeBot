@@ -35,7 +35,7 @@ module.exports = {
          .setColor("Blurple")
          .setTitle("HarenUptime • Proje sayıları")
          .addFields({name: `<:Belge:1046825193131225169> **Sistemdeki toplam projeler**`, value: `${db.fetch(`UptimeLink`) || [].length}`})
-         .addFields({name: `<:Link:1046776084965900308> **Senin toplam projelerin**`, value: `${db.fetch(`UptimeLink_${interaction.user.id}`).length}`})
+         .addFields({name: `<:Link:1046776084965900308> **Senin toplam projelerin**`, value: `${db.fetch(`UptimeLink_${interaction.user.id}`) || [].length}`})
          .addFields({name: `<:Premium:1047169286659129487> **Toplam premium üyeler**`, value: `${db.fetch(`PremiumSayı`) || 0}`})
          .addFields({name: `<:Limit:1065321210847707227> **Link ekleme hakkın**`, value: `${Limit}`})
         
