@@ -4,6 +4,7 @@ ___
 ___
 
 • Altyapı tamamen bana aittir ve paylaşılması kesinlikle yasaktır.
+
 • İstediğiniz gibi kullanabilirsiniz fakat altyapıyı kendiniz gibi gösteremezsiniz.
 ___
 • V14 slash komutlu form sistemli gelişmiş bir altyapıdır.
