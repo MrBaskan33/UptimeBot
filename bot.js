@@ -13,40 +13,6 @@ client.login(token)
 const express = require('express')
 const monitor = require('http-monitor')
 
-//=====// Rol alma \\=====\\
-client.on('interactionCreate', async interaction => {
-   if(interaction.customId === 'cekilis') {
-      if(interaction.member.roles.cache.has("1065651200189534268")){
-         interaction.reply({content: `Çekiliş bildirimi rolün geri alındı.`, ephemeral: true})
-         interaction.member.roles.remove("1065651200189534268")
-      } else {                                      
-         interaction.member.roles.add("1065651200189534268")
-         interaction.reply({content: `Çekiliş bildirimi rolü verildi.`, ephemeral: true})
-      }
-   }
- 
-  if(interaction.customId === 'bildirim') {
-      if(interaction.member.roles.cache.has("1065650900967886858")){
-         interaction.reply({content: `Genel bildirim rolü geri alındı.`, ephemeral: true})
-         interaction.member.roles.remove("1065650900967886858")
-      } else {                                      
-         interaction.member.roles.add("1065650900967886858")
-         interaction.reply({content: `Genel bildirim rolü verildi.`, ephemeral: true})
-      }
-   }
-  
-  if(interaction.customId === 'partner') {
-      if(interaction.member.roles.cache.has("1075685653209161759")){
-         interaction.reply({content: `Partner görme rolü geri alındı.`, ephemeral: true})
-         interaction.member.roles.remove("1075685653209161759")
-      } else {                                      
-         interaction.member.roles.add("1075685653209161759")
-         interaction.reply({content: `Partner görme rolü verildi.`, ephemeral: true})
-      }
-   }
-})
-//=====// Rol alma \\=====\\
-
 //=====// Embedler \\=====\\
 const PreYok = new EmbedBuilder()
     .setColor("Red")
