@@ -8,5 +8,5 @@ ___
 ___
 • V14 slash komutlu form sistemli gelişmiş bir altyapıdır.
 ___ 
-• Bir sorunuz olursa [https://discord.gg/hostinger](Buradan) benimle iletişime geçebilirsiniz.
+• Bir sorunuz olursa [https://discord.gg/hostinger](MrBaşkan ™#5981) benimle iletişime geçebilirsiniz.
 ___
