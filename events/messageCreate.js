@@ -15,21 +15,7 @@ module.exports = {
         let cmd = client.commands.get(command)
         if (!cmd) return
       
-    
-const Topgg = require(`@top-gg/sdk`)
-const api = new Topgg.Api('')
-
-const OyVermemişsin = new EmbedBuilder()
-  .setColor('Red')
-  .setTitle('Oy Vermemişsin')
-  .setDescription(`<:Carpi:1046504575277998130> Bu komutu kullanabilmek için botumuza oy vermelisiniz.`)
-const OyVer = new ActionRowBuilder().addComponents(new ButtonBuilder()        
-  .setURL(`https://top.gg/bot/${botid}/vote`)
-  .setLabel("Oy ver")
-  .setStyle("Link"))
-let isVoted = api.hasVoted(message.user.id)
-if(isVoted === false)return message.reply({embeds: [OyVermemişsin], components: [OyVer]})
-
+ 
         if(db.fetch(`Bakım`)) {
           
           const Bakımda = new EmbedBuilder()
