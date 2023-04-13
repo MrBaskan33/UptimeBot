@@ -10,20 +10,6 @@ module.exports = {
         const command = client.slashcommands.get(interaction.commandName)
         if (!command) return
         
-const Topgg = require(`@top-gg/sdk`)
-const api = new Topgg.Api('')
-
-const OyVermemişsin = new EmbedBuilder()
-  .setColor('Red')
-  .setTitle('Oy Vermemişsin')
-  .setDescription(`<:Carpi:1046504575277998130> Bu komutu kullanabilmek için botumuza oy vermelisiniz.`)
-const OyVer = new ActionRowBuilder().addComponents(new ButtonBuilder()        
-  .setURL(`https://top.gg/bot/${botid}/vote`)
-  .setLabel("Oy ver")
-  .setStyle("Link"))
-let isVoted = api.hasVoted(interaction.user.id)
-if(!isVoted)return interaction.reply({embeds: [OyVermemişsin], components: [OyVer]}).catch(err => interaction.reply(err))
-
       if(db.fetch(`Bakım`)) {
           
           const Bakımda = new EmbedBuilder()
