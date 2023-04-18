@@ -22,7 +22,7 @@ module.exports = {
       
     //  osutils.cpuUsage(function(v) {
         
-      const Linkler = db.fetch(`UptimeLink`)
+      const Linkler = db.fetch(`UptimeLink`) || []
       const Uptime = db.fetch(`UptimeLink_${interaction.user.id}`) || []
       const LinkLimit = db.fetch(`LinkLimit_${interaction.user.id}`) || 0
       let Limit = LinkLimit+3
