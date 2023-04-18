@@ -13,13 +13,13 @@ module.exports = {
   
     async execute(client, interaction) {  
       
-      const Uptime = db.fetch(`UptimeLink_${interaction.user.id}`)
+      const Uptime = db.fetch(`UptimeLink_${interaction.user.id}`) || []
       const LinkLimit = db.fetch(`LinkLimit_${interaction.user.id}`) || 0
       let Limit = LinkLimit+3
       const Linkler = db.fetch(`UptimeLink`) || []
       const KişiLinkleri = db.fetch(`UptimeLink_${interaction.user.id}`) || []
 
-      if(!Uptime) {
+      if(!Uptime.length <= 0) {
         
       const SayYok = new EmbedBuilder()
          .setColor("Blurple")
