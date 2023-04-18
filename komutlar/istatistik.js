@@ -22,12 +22,12 @@ module.exports = {
       
     //  osutils.cpuUsage(function(v) {
         
-      const Linkler = db.fetch(`UptimeLink`) || [].length
-      const Uptime = db.fetch(`UptimeLink_${interaction.user.id}`)
+      const Linkler = db.fetch(`UptimeLink`)
+      const Uptime = db.fetch(`UptimeLink_${interaction.user.id}`) || []
       const LinkLimit = db.fetch(`LinkLimit_${interaction.user.id}`) || 0
       let Limit = LinkLimit+3
       
-      if(!Uptime) {
+      if(!Uptime.length <= 0) {
         
       let days = Math.floor(client.uptime / 86400000);
       let hours = Math.floor(client.uptime / 3600000) % 24;
@@ -79,7 +79,7 @@ module.exports = {
         },
         {
           name: "<:Belge:1046825193131225169> Toplam projeler",
-          value: `\`${Linkler}\``
+          value: `\`${Linkler.length}\``
         },
         {
           name: "<:Link:1046776084965900308> Senin projelerin",
@@ -148,11 +148,11 @@ module.exports = {
         },
         {
           name: "<:Belge:1046825193131225169> Toplam projeler",
-          value: `\`${Linkler}\``
+          value: `\`${Linkler.length}\``
         },
         {
           name: "<:Link:1046776084965900308> Senin projelerin",
-          value: `\`${db.fetch(`UptimeLink_${interaction.user.id}`) || [].length}\``
+          value: `\`${Uptime.length}\``
         },
         {           
           name: "<:Premium:1047169286659129487> Toplam premium üyeler",
