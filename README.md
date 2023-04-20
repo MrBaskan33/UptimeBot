@@ -1,4 +1,4 @@
-# ```HarenUptime```
+# ```UptimeBot```
 ___
 • Önceki Haren Uptime botunun altyapısı.
 ___
