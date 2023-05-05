@@ -1,11 +1,9 @@
-# ```UptimeBot```
+# ```HarenUptime```
 ___
-• Önceki Haren Uptime botunun altyapısı.
+• HarenUptime discord botu açık kaynak kodudur.
 ___
 
-• Altyapı tamamen bana aittir ve paylaşılması kesinlikle yasaktır.
-
-• İstediğiniz gibi kullanabilirsiniz fakat altyapıyı kendiniz gibi gösteremezsiniz.
+• Altyapı ve lisans hakları bana aittir. Lisans haklarının ihlali durumunda gerekli işlemler yapılacaktır.
 ___
 • V14 slash komutlu form sistemli gelişmiş bir altyapıdır.
 ___ 
