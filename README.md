@@ -1,9 +1,4 @@
-# ```HarenUptime```
-___
-• HarenUptime discord botu açık kaynak kodudur.
-___
-
-• Altyapı ve lisans hakları bana aittir. Lisans haklarının ihlali durumunda gerekli işlemler yapılacaktır.
+# ```UptimeBot```
 ___
 • V14 slash komutlu form sistemli gelişmiş bir altyapıdır.
 ___ 
