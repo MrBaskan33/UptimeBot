@@ -1,7 +1,7 @@
 {
-  "name": "Haren Uptime",
+  "name": "UptimeBot",
   "version": "1.0.0",
-  "description": "Haren Uptime",
+  "description": "UptimeBot",
   "main": "bot.js",
   "scripts": {
     "start": "node bot.js"
