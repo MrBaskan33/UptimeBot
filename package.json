@@ -15,7 +15,6 @@
     "moment-duration-format": "^2.3.2",
     "ms": "^2.1.3",
     "croxydb": "^0.0.7",
-    "uprobot.js": "^0.0.2",
     "express": "^4.18.2",
     "os": "^0.1.2",
     "@discordjs/voice": "^0.14.0",
