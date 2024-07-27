@@ -2,7 +2,7 @@
 ___
 • V14 slash komutlu form sistemli gelişmiş bir altyapıdır.
 ___ 
-• Botu kendinizin gibi göstermek yasaktır. 
+• **Botu herkes sanki kendi altyapısıymış gibi gösterdiği ve kullandığı için artık kullanımı yasaktır. Kullanan olursa her türlü yerden şikayet etmekten çekinmem. Bunu ben istemedim siz istediniz. İyi kodlamalar.**
 ___
 • Bir sorunuz olursa [Buradan](https://discord.com/users/873182701061021696) benimle iletişime geçebilirsiniz.
 ___
